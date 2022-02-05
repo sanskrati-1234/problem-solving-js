@@ -21,7 +21,7 @@ const findPath = (object, path) => {
     var ans;
     for(var i=0;i<a.length;i++){
         object=object[a[i]];
-        if(object===undefined)break;
+        if(object===undefined || object === null)break;
     }    
     return object;
 };

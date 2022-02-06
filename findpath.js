@@ -19,8 +19,12 @@ var obj = {
 const findPath = (object, path) => {
     var a =path.split(".");
     for(var i=0;i<a.length;i++){
-        object=object[a[i]];
-        if(object===undefined || object === null)break;
+        if(object===undefined || object === null){
+            break;
+        }
+         else {
+            object=object[a[i]];
+         }        
     }    
     return object;
 };

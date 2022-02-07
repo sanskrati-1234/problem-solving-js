@@ -6,7 +6,7 @@ let right=0;
 while(arr1[left]>arr2[right] && left>-1 && right<arr2.length){
     temp=arr1[left];
     arr1[left]=arr2[right];
-    a[right]=temp;
+    arr2[right]=temp;
     left--;
     right++;
 

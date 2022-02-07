@@ -7,8 +7,15 @@
 */
 /*
 Algorithm:
-
-
+step1: take two parameters
+step2: 
+    2.1 check for falsy value for path , if its a falsy value it will return path falsy values it self
+    2.2 if value is valid if will try to check path in object
+       2.2.1 if object contain falsy value break the loop
+       2.2.2 if object it valid object find the path and return
+step3: stop       
+       
+   
 */
 var obj = {
     a: {

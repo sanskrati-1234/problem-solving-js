@@ -5,7 +5,11 @@
     - keys separated by dots as string
 - Return value if it exists at that path inside the object, else return undefined
 */
+/*
+Algorithm:
 
+
+*/
 var obj = {
     a: {
         b: {
@@ -17,6 +21,9 @@ var obj = {
 };
 
 const findPath = (object, path) => {
+    if(!Boolean(path)){
+        return path;
+    }
     var a =path.split(".");
     for(var i=0;i<a.length;i++){
         if(object===undefined || object === null){
